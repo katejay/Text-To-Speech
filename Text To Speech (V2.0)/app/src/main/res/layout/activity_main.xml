@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
-        app:layout_constraintGuide_percent="0.60" />
+        app:layout_constraintGuide_percent="0.55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -132,5 +132,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:layout_constraintVertical_bias="0.3" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="28dp"
+        android:text="Speed"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.833" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
